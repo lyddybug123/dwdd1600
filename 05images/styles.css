@@ -35,7 +35,6 @@ nav ul {
     padding: 10px 10px;
     list-style-type: none;
     display: flex;
-    flex-direction: column;
 }
 
 nav a {
