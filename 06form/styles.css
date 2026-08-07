@@ -7,7 +7,7 @@ body header {
     margin: 0;
 }
 
-body nav, main, footer{
+body nav, body main, body footer{
     font-family: "Open Sans", sans-serif;
     margin: 0;
 }
@@ -30,12 +30,11 @@ nav {
 }
 
 nav ul {
-    width: 20%;
     margin: 0;
     padding: 10px 10px;
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -48,7 +47,7 @@ nav a {
     align-content: center;
     text-align: center;
     height: 48px;
-
+    width: 200px;
 }
 
 nav li.active a {
@@ -169,6 +168,52 @@ div.gallery figcaption {
     text-align: center;
     font-size: .8rem;
     color: #567035;
+}
+
+/* form stuff here */
+.newsletter fieldset{
+    border: 1px solid #f86074;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.newsletter legend {
+    color: #f86074;
+}
+
+.newsletter label {
+    margin: 1rem;
+}
+
+.newsletter label, .newsletter select, .newsletter textarea, .newsletter [type=text], .newsletter [type=tel], .newsletter [type=email]{
+    display: block;
+}
+
+.newsletter select, .newsletter textarea, .newsletter [type=text], .newsletter [type=tel], .newsletter [type=email] {
+    border: 1px solid #567035;
+    padding: .5rem;
+    width: 20%;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    background-color: #fff8f2;
+}
+
+.newsletter textarea {
+    height: 100px;
+}
+
+.newsletter :required {
+    background-color: #fff1e6;
+}
+
+.newsletter [type=submit] {
+    background-color: #f86074;
+    color: #fff8f2;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 6rem;
+    margin: 1rem 0 0 1vw;
+    font-size: 1.5rem;
 }
 
 /*footer stuff here*/
