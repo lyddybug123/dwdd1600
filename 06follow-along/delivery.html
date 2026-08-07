@@ -15,7 +15,8 @@
 <body>
     <!-- start the page header -->
     <header>
-        <span>Drone Delivery </span>
+        <h1>Drone Delivery </h1>
+        <p>Service Above and Beyond</p>
     </header>
     
     <!-- start the page navigation -->
@@ -31,8 +32,44 @@
     <main>
         <h1>Request a Delivery</h1>
         <form method="get" class="myForm" action="thanks.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+            </fieldset>
 
-        <input type="submit" value="Send delivery request">
+            <fieldset>
+                <legend>Delivery Method</legend>
+                <label><input type="radio" name="method" value="drone">Drone Delivery (2hrs)</label>
+                <label><input type="radio" name="method" value="cycle">Motorcylce Delivery (4hrs)</label>
+                <label><input type="radio" name="method" value="robot">Robot Delivery (6hrs)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <label><input type="checkbox" name="porch" value="chosen">Front Porch</label>
+                <label><input type="checkbox" name="deck" value="chosen">Back Deck</label>
+                <label><input type="checkbox" name="driveway" value="chosen">Driveway</label>
+                <label><input type="checkbox" name="garage" value="chosen">Inside the Garage</label>
+
+                <label>Preferred Delivery Time
+                <select name="time">
+                    <option value="none">Please Select</option>
+                    <option value="morning">Between 7:00am and 11:00am</option>
+                    <option value="noon">Between 11:00am and 2:00pm</option>
+                    <option value="afternoon">Between 2:00pm and 5:00pm</option>
+                    <option value="evening">Between 5:00pm and 8:00pm</option>
+                </select>
+                </label>
+            </fieldset>
+
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" value="Send delivery request">
+
         </form> 
     </main>
     
