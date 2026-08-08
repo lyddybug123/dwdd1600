@@ -51,10 +51,18 @@ header span {
     nav a {
         display: block;
         text-align: center;
-        padding: .8rem;
+        padding: 1.5rem;
         color: #6c7e56;
         text-decoration: none;
         border-bottom: solid 1px #fff8f2;
+        font-weight: 700;
+
+    }
+
+    nav .active a {
+        background-color: #567035;
+        color: #fff8f2;
+        font-weight: 1300;
     }
 
 } /* end small screen navigation */
@@ -274,4 +282,9 @@ footer p {
     font-size: .8rem;
     color: #fff8f2;
     letter-spacing: 3px;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
 }
