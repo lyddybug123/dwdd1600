@@ -1,10 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    background-color: #ffcd8c;
+}
+
+body .container {
+    max-width: 64rem;
+    margin: 0 auto;
+    box-shadow: -10px 10px 10px 0px rgba(0,0,0,0.2),
+                 10px 10px 10px 0px rgba(0,0,0,0.2);
 }
 
 body header {
     font-family: "Playfair Display", serif;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 body nav, body main, body footer{
@@ -15,7 +29,7 @@ body nav, body main, body footer{
 /*header stuff here*/
 header {
     background-color: #f86074;
-    padding: 1rem 30px;
+    padding: 1rem 2vw;
 }
 
 header span {
@@ -24,42 +38,69 @@ header span {
     font-weight: 900;
 }
 
-/*Navigation stuff here*/
-nav {
-    background-color: #ffcd8c;
-}
+/* small screen navigation */
+@media only screen and (max-width: 800px){
+    body .container {
+        box-shadow: none;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #6c7e56;
+        text-decoration: none;
+        border-bottom: solid 1px #fff8f2;
+    }
 
-nav ul {
-    margin: 0;
-    padding: 10px 10px;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-}
+} /* end small screen navigation */
 
-nav a {
-    display: block;
-    padding: .83rem 1rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #567035;
-    font-weight: 700;
-    align-content: center;
-    text-align: center;
-    height: 48px;
-    width: 200px;
-}
+/* LARGE SCREEN NAVIGATION */
+@media only screen and (min-width: 801px){
 
-nav li.active a {
-    background-color: #567035;
-    color: #fff8f2;
-    border-radius: 10px;
-    border: 2px solid #567035;
-}
+    nav {
+        background-color: #ffcd8c;
+    }
 
-nav li a:hover {
-    color: #fff8f2;
-}
+    nav ul {
+        margin: 0;
+        padding: 10px 10px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        display: block;
+        padding: .83rem 1rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #567035;
+        font-weight: 700;
+        align-content: center;
+        text-align: center;
+        height: 5rem;
+        min-width: 12rem;
+    }
+
+    nav .active a {
+        background-color: #567035;
+        color: #fff8f2;
+        border-radius: 10px;
+        border: 2px solid #567035;
+    }
+
+    nav li a:hover {
+        color: #fff8f2;
+    }
+} /* end LARGE screen navigation */
+
+
+
 
 /*main stuff here*/
 main {
@@ -138,36 +179,40 @@ main a:hover {
 }
 
 /* main image stuff here */
-figure.wrapped {
+figure .wrapped {
     width: 30%;
     float: right;
 }
 
-figure.wrapped img {
+figure .wrapped img {
     width: 100%;
     height: auto;
 }
 
-figure.wrapped figcaption {
+figure .wrapped figcaption {
     text-align: center;
     font-size: .8rem;
 }
 
 /* gallery stuff here */
-div.gallery {
+div .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 30px 10px;
 }
 
-div.gallery figure {
+div .gallery figure {
     margin: 0;
 }
 
-div.gallery figcaption {
+div .gallery figcaption {
     text-align: center;
     font-size: .8rem;
     color: #567035;
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 
 /* form stuff here */
