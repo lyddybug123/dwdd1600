@@ -60,7 +60,7 @@ header span {
     }
 
     nav .active a {
-        background-color: #567035;
+        background-image: linear-gradient(to bottom, #588321, #556e35);
         color: #fff8f2;
         font-weight: 1300;
     }
@@ -96,10 +96,10 @@ header span {
     }
 
     nav .active a {
-        background-color: #567035;
+        background-image: linear-gradient(to bottom, #588321, #556e35);
         color: #fff8f2;
         border-radius: 10px;
-        border: 2px solid #567035;
+        border: 0px solid #567035;
     }
 
     nav li a:hover {
