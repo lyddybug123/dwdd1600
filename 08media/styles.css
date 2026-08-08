@@ -62,7 +62,7 @@ header span {
     nav .active a {
         background-image: linear-gradient(to bottom, #588321, #556e35);
         color: #fff8f2;
-        font-weight: 1300;
+        font-weight: 1000;
     }
 
 } /* end small screen navigation */
