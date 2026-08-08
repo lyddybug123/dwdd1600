@@ -92,7 +92,7 @@ header span {
         align-content: center;
         text-align: center;
         height: 5rem;
-        min-width: 12rem;
+        min-width: 10rem;
     }
 
     nav .active a {
@@ -172,7 +172,7 @@ main address {
     padding: .5rem;
     border-radius: 5px;
     border: 3px solid #f86074;
-    width: 200px;
+    width: 100%;
     color: #333
 }
 
@@ -267,6 +267,32 @@ div .gallery figcaption {
     padding: 1rem 6rem;
     margin: 1rem 0 0 1vw;
     font-size: 1.5rem;
+}
+
+/* Table Stuff Here*/
+table.patterns {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.patterns th {
+    background-color: #f86074;
+    color: #fff8f2;
+    padding: .6rem 2%;
+    text-align: left;
+}
+
+table.patterns td {
+    color: #567035;
+    padding: .4rem 2%;
+}
+
+table.patterns tr:nth-child(odd){
+    background-color: #fff1e6;
+}
+
+table.patterns tr:hover {
+    background-color: #ffd6b3;
 }
 
 /*footer stuff here*/
